@@ -1,6 +1,5 @@
 from turtle import*
 
-bgcolor("black")
 title("shape 2")
 pensize(2)
 color("blue")
