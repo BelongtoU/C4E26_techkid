@@ -1,7 +1,7 @@
 from turtle import*
 size_sh = 100
 colors = ["red", "blue", "brown", "yellow", "grey"]
-
+title("shape 2")
 speed(0)
 for cl in colors:
     color(cl)
@@ -14,6 +14,7 @@ for cl in colors:
         forward(size_sh)
         left(90)
         forward(1)
-        
+left(90)
+forward(size_sh)
 
 mainloop()
