@@ -19,13 +19,13 @@ while bool_var:
                     new_item = input("New item? ")
                     clothes.insert(u_p - 1, new_item)
                     print("Our items: ", ', '.join(clothes))
+                    bool_var = False  
                     break
-                # bool_var = False # not work    
                 else:
                     print("Please enter a number from 1 to", len(clothes))
+                    print("Your shop only has %s items: "%len(clothes), ', '.join(clothes))
             else:
                 print("Please enter a number from 1 to", len(clothes))
-        break               
     elif act == "D":
         while True:# this loop help user can enter the position again when they fail in the first
             d_p = input("Delete position? ")
@@ -33,13 +33,13 @@ while bool_var:
                 d_p = int(d_p)    
                 if 0 < d_p <= len(clothes):
                     clothes.remove(clothes[d_p - 1])
-                    print("Our items: ", ', '.join(clothes))
-                    break
-                # bool_var = False  # not work  
+                    print("Our items: ", ', '.join(clothes))  
+                    bool_var = False  
+                    break  
                 else:
                     print("Please enter a number from 1 to", len(clothes))
+                    print("Your shop only has %s items: "%len(clothes), ', '.join(clothes))
             else:
                 print("Please enter a number from 1 to", len(clothes))
-        break
     else:
         print("Please enter C or R or U or D (in upper) !!!")
